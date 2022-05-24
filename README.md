@@ -5,11 +5,9 @@ Lifecycle an Amazon AWS S3 bucket and learn about Ansible.
 @RZFeeser
 
 ### To use
-To build the "jellytoaster76", run the following:
-`ansible-playbook playbook_s3_bucket.yml`
+- To build the "jellytoaster76", run the following: `ansible-playbook playbook_s3_bucket.yml`
 
-To remove the "jellytoaster76", Run the following:
-`ansible-playbook -e "hereorthere=absent" playbook_s3_bucket.yml`
+- To remove the "jellytoaster76", Run the following: `ansible-playbook -e "hereorthere=absent" playbook_s3_bucket.yml`
 
 ### Authorization notes
 - If you use this solution within AWX or Ansible Tower, simply use the credential associated with Amazon AWS Cloud. The playbook is setup to read the necessary credentials.

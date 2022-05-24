@@ -1,6 +1,8 @@
-# aws_cloud
-
+# Ansible for AWS Cloud
 Lifecycle an Amazon AWS S3 bucket and learn about Ansible.
+
+### Author
+@RZFeeser
 
 ### To use
 To build the "jellytoaster76", run the following:

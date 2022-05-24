@@ -7,8 +7,8 @@
   vars:
       s3bucketname: "jellytoaster76"
       hereorthere: "present"
-      ec2_access_key: "pass as an extra variable at run time"
-      ec2_secret_key: "pass as an extra variable at run time"
+      access_key: "{{ lookup('env', 'AWS_ACCESS_KEY_ID' }}"
+      secret_key: "{{ lookup('env', 'AWS_SECRET_ACCESS_KEY' }}"
 
 
   tasks:
@@ -16,5 +16,5 @@
       s3_bucket:
         name: "{{ s3bucketname }}"    # default is "jellytoaster76"
         state: "{{ hereorthere }}"    # default is "present"
-        aws_access_key: "{{ ec2_access_key }}"  # default is defined in ~/cred.zon
-        aws_secret_key: "{{ ec2_secret_key }}"  # defautl is defined in ~/cred.zon
+        aws_access_key: "{{ access_key }}"  # default is defined in ~/cred.zon
+        aws_secret_key: "{{ secret_key }}"  # defautl is defined in ~/cred.zon

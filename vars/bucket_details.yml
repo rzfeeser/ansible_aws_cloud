@@ -1,6 +1,6 @@
 ---
 # name of the s3 bucket
-s3bucketname: "jellytoaster67"
+s3bucketname: "jellytoaster717"
 
 # state of the bucket
 hereorthere: "present"

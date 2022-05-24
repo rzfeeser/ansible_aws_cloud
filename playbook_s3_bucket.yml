@@ -7,8 +7,8 @@
   vars:
       s3bucketname: "jellytoaster76"
       hereorthere: "present"
-      access_key: "{{ lookup('env', 'AWS_ACCESS_KEY_ID' }}"
-      secret_key: "{{ lookup('env', 'AWS_SECRET_ACCESS_KEY' }}"
+      access_key: "{{ lookup('env', 'AWS_ACCESS_KEY_ID') }}"
+      secret_key: "{{ lookup('env', 'AWS_SECRET_ACCESS_KEY') }}"
 
 
   tasks:

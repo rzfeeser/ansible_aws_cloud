@@ -1,2 +1,5 @@
 # aws_cloud
-Create an AWS bucket
+
+Lifecycle an Amazon AWS S3 bucket.
+
+ansible-playbook playbook_s

@@ -1,1 +1,6 @@
+---
+# name of the s3 bucket
+s3bucketname: "jellytoaster76"
 
+# state of the bucket
+hereorthere: "present"

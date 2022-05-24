@@ -5,7 +5,7 @@
   gather_facts: no
 
   vars_files:
-      - bucket_details.yml
+      - vars/bucket_details.yml
       
   vars:
       access_key: "{{ lookup('env', 'AWS_ACCESS_KEY_ID') }}"

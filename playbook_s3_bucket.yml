@@ -13,6 +13,7 @@
 
   tasks:
     - name: Create an Amazon AWS S3 bucket
+      amazon.aws.s3_bucket:
         name: "{{ s3bucketname }}"    # default is "jellytoaster76"
         state: "{{ hereorthere }}"    # default is "present"
         aws_access_key: "{{ ec2_access_key }}"  # default is defined in ~/cred.zon

@@ -4,9 +4,10 @@
   connection: local   # no SSH, we want to use HTTP
   gather_facts: no
 
+  vars_files:
+      - bucket_details.yml
+      
   vars:
-      s3bucketname: "jellytoaster76"
-      hereorthere: "present"
       access_key: "{{ lookup('env', 'AWS_ACCESS_KEY_ID') }}"
       secret_key: "{{ lookup('env', 'AWS_SECRET_ACCESS_KEY') }}"
 

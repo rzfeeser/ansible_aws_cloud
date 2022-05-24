@@ -3,4 +3,4 @@
 s3bucketname: "jellytoaster717"
 
 # state of the bucket
-hereorthere: "present"
+hereorthere: "absent"
